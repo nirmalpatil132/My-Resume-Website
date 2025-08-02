@@ -715,9 +715,18 @@ section {
 @media(max-width: 991px) {
     .header { padding: 2rem 3%; }
     section { padding: 10rem 3% 6rem; }
-    .home { flex-direction: column-reverse; text-align: center; }
-    .home-content { margin-top: 4rem; }
-    .home-actions { justify-content: center; }
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        min-height: auto; /* Changed from 100vh */
+        padding-top: 12rem; /* Add padding to avoid overlap with header */
+    }
+    .home-content { 
+        margin-top: 4rem; 
+    }
+    .home-actions { 
+        justify-content: center; 
+    }
     .about-content-grid { grid-template-columns: 1fr; }
     .skills-grid { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr; }
@@ -729,12 +738,6 @@ section {
     .navbar.active { left: 0; }
     .navbar a { display: block; font-size: 2rem; margin: 3rem 0; }
     
-    /* MOBILE FIX: Adjust home section for better mobile layout */
-    .home {
-        flex-direction: column-reverse;
-        min-height: auto;
-        padding-top: 12rem;
-    }
     .home-img {
         width: 32rem;
         height: 32rem;
