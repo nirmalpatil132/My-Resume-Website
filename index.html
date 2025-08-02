@@ -3,170 +3,344 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nirmal Patil - Front-End Developer</title>
+    <title>Nirmal Patil | Front-End Developer & Agentic AI Engineer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://img.icons8.com/fluency-systems-filled/48/5451fb/n.png" type="image/x-icon">
+
+    <!-- External Libraries -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Your Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> </head>
+</head>
 <body>
-    <header>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">NP</a>
         <nav class="navbar">
-            <div class="container">
-                <a href="#" class="logo">Nirmal Patil</a>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="theme-toggle-container">
-                    <label class="theme-switch" for="checkbox">
-                        <input type="checkbox" id="checkbox" />
-                        <div class="slider round">
-                            <i class="fas fa-sun light-icon"></i>
-                            <i class="fas fa-moon dark-icon"></i>
-                        </div>
-                    </label>
-                    <span class="theme-text">Theme</span>
-                </div>
-            </div>
+            <a href="#home" class="active" style="--i:1;">Home</a>
+            <a href="#about" style="--i:2;">About</a>
+            <a href="#skills" style="--i:3;">Skills</a>
+            <a href="#projects" style="--i:4;">Projects</a>
+            <a href="#education" style="--i:5;">Education</a>
+            <a href="#contact" style="--i:6;">Contact</a>
         </nav>
+        <i class='bx bx-menu' id="menu-icon"></i>
     </header>
 
-    <main>
-        <section id="hero" class="hero-section">
-            <div class="container hero-content">
-                <img src="profile-photo.jpg.jpg" alt="Nirmal Patil" class="profile-photo"> <h1>Nirmal Patil</h1>
-                <p class="tagline">Front-End Developer | Computer Science Engineering Student</p>
-                <p class="intro">Enthusiastic and tech-savvy front-end developer with a passion for building user-friendly web applications. Skilled in leveraging AI tools, prompt engineering, and chatbot platforms for real-world solutions. Eager to apply creative problem-solving and a continuous learning mindset in dynamic projects. Always keen to explore the latest trends in web technologies and AI.</p>
-                <a href="#contact" class="btn-primary">Get in Touch</a>
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1 class="gradient-text">Nirmal Patil</h1>
+            <h2 class="gradient-text">Front-End Developer & <span class="typed-text"></span></h2>
+            <p>Enthusiastic Front-End Developer passionate about building user-friendly web applications and exploring cutting-edge Agentic AI technologies. Skilled in designing, deploying, and orchestrating intelligent solutions.</p>
+            <div class="home-actions">
+                <a href="#contact" class="btn">Get In Touch <i class='bx bx-send'></i></a>
+                <a href="CV Nirmal Updated.pdf" download="Nirmal_Patil_CV.pdf" class="btn btn-secondary">Download CV <i class='bx bx-download'></i></a>
+                <a href="https://github.com/nirmalpatil132" target="_blank" class="icon-btn"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/nirmal-patil-458952288" target="_blank" class="icon-btn"><i class='bx bxl-linkedin'></i></a>
             </div>
-        </section>
-
-        <section id="about" class="section fade-in-section">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="content-box">
-                    <p>I am Nirmal Patil, a 2nd-year Computer Science Engineering student at Government College of Engineering, Kolhapur. I am constantly learning and exploring various aspects of computer science, with a strong foundation in programming languages like C, Python, and Java. My interests extend to web development, where I've gained hands-on experience with HTML, CSS, JavaScript, and database management using SQL.</p>
-                    <p>My goal is to leverage my skills to create impactful and user-friendly web experiences. I am particularly keen to explore the intersection of web technologies and AI, always looking for opportunities to learn and grow in dynamic environments.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section fade-in-section">
-            <div class="container">
-                <h2 class="section-title">Skills & Expertise</h2>
-                <div class="skills-grid">
-                    <div class="skill-category content-box">
-                        <h3>Programming Languages</h3>
-                        <ul>
-                            <li>Python</li>
-                            <li>C</li>
-                            <li>Java</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category content-box">
-                        <h3>Web Development</h3>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Responsive Design</li>
-                            <li>UI/UX Fundamentals</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category content-box">
-                        <h3>Databases & Tools</h3>
-                        <ul>
-                            <li>SQL</li>
-                            <li>Database Management (Relational Databases)</li>
-                            <li>Canva, Graphic Design</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category content-box">
-                        <h3>Soft Skills & Others</h3>
-                        <ul>
-                            <li>Teamwork & Communication</li>
-                            <li>Problem Solving</li>
-                            <li>AI Tools & Prompt Engineering</li>
-                            <li>Chatbot Platforms</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section fade-in-section">
-            <div class="container">
-                <h2 class="section-title">Projects & Training</h2>
-                <div class="project-item content-box">
-                    <h3>Front-End Web Development Training (Udemy)</h3>
-                    <p>Completed a comprehensive Udemy course by Angela Yu, covering HTML, CSS, JavaScript, and UI/UX fundamentals. Gained practical experience by building several mini-projects, including a Netflix clone. Mastered responsive design principles.</p>
-                </div>
-                <div class="project-item content-box">
-                    <h3>Nike Clone Website</h3>
-                    <p>Independently developed a Nike clone website, focusing on responsive layouts, intuitive navigation, product displays, and consistent design to ensure hands-on learning and continuous improvement.</p>
-                </div>
-                <div class="project-item content-box">
-                    <h3>Basic Application Development (C, Python, Java)</h3>
-                    <p>Completed hands-on coding projects in Python, C, and Java, covering problem-solving, algorithm implementation, and basic application development, enhancing logical thinking and coding proficiency.</p>
-                </div>
-                <div class="project-item content-box">
-                    <h3>College-Level Team Projects</h3>
-                    <p>Actively contributed as a team member in multiple college-level projects, applying collaborative development, effective communication, and problem-solving skills in real project environments.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="section fade-in-section">
-            <div class="container">
-                <h2 class="section-title">Education</h2>
-                <div class="education-item content-box">
-                    <h3>Bachelor of Technology in Computer Science Engineering</h3>
-                    <p>Government College of Engineering (GCOE), Kolhapur, Maharashtra</p>
-                    <p>2023 - 2027</p> </div>
-                <div class="education-item content-box">
-                    <h3>Senior Secondary (XII)</h3>
-                    <p>Indira Gandhi Junior College, Maharashtra State Board</p>
-                    <p>2023</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="accomplishments" class="section fade-in-section">
-            <div class="container">
-                <h2 class="section-title">Accomplishments</h2>
-                <ul class="content-box accomplishment-list">
-                    <li>IIT Bombay Entrepreneurship Workshop - Learned about business models and startup building.</li>
-                    <li>NEC Event Winner - Recognized for tech innovation.</li>
-                    <li>Self-learning AI and Analytics concepts through online platforms.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="contact" class="section fade-in-section">
-            <div class="container">
-                <h2 class="section-title">Get in Touch</h2>
-                <p class="contact-intro">Feel free to connect with me for internships, job offers, or collaborations!</p> <div class="contact-info content-box">
-                    <p><span class="contact-icon">📞</span> <strong>Phone:</strong> +91-9322351145</p>
-                    <p><span class="contact-icon">📧</span> <strong>Email:</strong> nirmalpatil615@gmail.com</p>
-                    <p><span class="contact-icon">🔗</span> <strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/nirmal-patil-458952288" target="_blank">linkedin.com/in/nirmal-patil-458952288</a></p>
-                    <p><span class="contact-icon">📍</span> <strong>Address:</strong> A4 BLDG, SHREE SAI COMPLEX, DADRA NAGAR HAVELI 396191</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Nirmal Patil. All rights reserved.</p>
-            <div class="social-links">
-                <a href="http://www.linkedin.com/in/nirmal-patil-458952288" target="_blank">LinkedIn</a>
-                </div>
         </div>
+        <div class="home-img">
+            <div class="home-img-inner">
+                <img src="profile-photo.jpg.jpg" alt="Nirmal Patil">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div style="width: 100%;">
+            <h2 class="section-heading">About <span>Me</span></h2>
+            <p class="section-subheading">I'm an enthusiastic Front-End Developer and emerging Agentic AI Engineer passionate about building user-friendly web applications and autonomous AI agents. Currently pursuing B.Tech and continuously learning cutting-edge technologies.</p>
+            <div class="about-content-grid">
+                <div class="about-text">
+                    <h3>Building intelligent solutions with modern technology</h3>
+                    <p>As a Front-End Developer, I specialize in creating responsive and interactive web applications using modern technologies like HTML, CSS, JavaScript, and React. I'm passionate about crafting user-centered digital experiences.</p>
+                    <p>My journey into Agentic AI has equipped me with expertise in CrewAI, OpenAI Agents SDK, LangGraph, and AutoGen. I've mastered design patterns for Agentic AI and connected LLMs to create autonomous workflows.</p>
+                    <p>I'm proficient in UI/UX design using Figma and Canva, with experience in backend technologies like SQL and PostgreSQL. Currently pursuing my B.Tech degree while continuously learning new technologies and contributing to innovative projects.</p>
+                </div>
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div class="icon"><i class='bx bx-code-alt'></i></div>
+                        <div class="card-text">
+                            <h4>Clean Code</h4>
+                            <p>Writing maintainable and scalable code with modern web technologies like HTML, CSS, JavaScript, and React.</p>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="icon"><i class='bx bx-bot'></i></div>
+                        <div class="card-text">
+                            <h4>Agentic AI</h4>
+                            <p>Experienced with CrewAI, OpenAI Agents SDK, LangGraph, and AutoGen for building intelligent autonomous systems.</p>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="icon"><i class='bx bx-palette'></i></div>
+                        <div class="card-text">
+                            <h4>UI/UX Design</h4>
+                            <p>Skilled in Figma and Canva for wireframing, prototyping, and creating clean, intuitive user interfaces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="section-heading">Skills & <span>Technologies</span></h2>
+        <p class="section-subheading">My technical expertise spans from frontend development to cutting-edge Agentic AI technologies.</p>
+        <div class="skills-grid">
+            <div class="skills-column">
+                <h3>Core Expertise</h3>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Frontend Development (HTML, CSS, JS)</span><span>90%</span></div>
+                    <div class="progress-bar"><div class="progress" style="width: 90%; background: linear-gradient(90deg, #5451fb, #00aaff);"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Agentic AI Engineering</span><span>85%</span></div>
+                    <div class="progress-bar"><div class="progress" style="width: 85%; background: linear-gradient(90deg, #ff00c3, #ff7f50);"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>UI/UX Design (Figma, Canva)</span><span>80%</span></div>
+                    <div class="progress-bar"><div class="progress" style="width: 80%; background: linear-gradient(90deg, #32cd32, #adff2f);"></div></div>
+                </div>
+                 <div class="skill-item">
+                    <div class="skill-info"><span>Programming (Python, C, Java)</span><span>75%</span></div>
+                    <div class="progress-bar"><div class="progress" style="width: 75%; background: linear-gradient(90deg, #ff4500, #ffa500);"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Database Management (SQL)</span><span>70%</span></div>
+                    <div class="progress-bar"><div class="progress" style="width: 70%; background: linear-gradient(90deg, #8a2be2, #9370db);"></div></div>
+                </div>
+            </div>
+            <div class="skills-column">
+                <h3>Technologies</h3>
+                <div class="technologies-container">
+                    <div class="tech-category">
+                        <h4>Frontend Development</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">React</span><span class="tech-tag">Responsive Design</span><span class="tech-tag">Web Applications</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h4>Agentic AI & ML</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">CrewAI</span><span class="tech-tag">OpenAI Agents SDK</span><span class="tech-tag">LangGraph</span><span class="tech-tag">AutoGen</span><span class="tech-tag">LLM Integration</span><span class="tech-tag">Multi-Agent Systems</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h4>UI/UX Design</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Figma</span><span class="tech-tag">Canva</span><span class="tech-tag">Wireframing</span><span class="tech-tag">Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-heading">Featured <span>Projects</span></h2>
+        <p class="section-subheading">A showcase of my work in Agentic AI engineering and web development, demonstrating both technical skills and creative problem-solving.</p>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="agentic-ai">Agentic AI</button>
+            <button class="filter-btn" data-filter="web-dev">Web Development</button>
+        </div>
+        <div class="projects-container">
+           
+            <div class="project-box" data-category="web-dev">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=1064&q=80" alt="Personal Portfolio Clone">
+                    <span class="project-tag">Web Development</span>
+                </div>
+                <div class="project-content">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Designed and developed a fully responsive personal resume website with clean layouts and interactive elements.</p>
+                    <div class="tech-tags"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">Js</span> <span class="tech-tag">Backend</span><span class="tech-tag">React.js</span></div>
+                </div>
+            </div>
+            <div class="project-box" data-category="web-dev">
+                <div class="project-img">
+                    <img src="https://imgs.search.brave.com/kZrUjD4WsnzhCOnHMZkeo9YaPNF92n_SrBTX-1c5cGU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE2/NDMyMDg1ODk4ODkt/MDczNWFkNzIxOGYw/P2ZtPWpwZyZxPTYw/Jnc9MzAwMCZpeGxp/Yj1yYi00LjEuMCZp/eGlkPU0zd3hNakEz/ZkRCOE1IeHpaV0Z5/WTJoOE1qQjhmRzVs/ZEdac2FYZ2xNakJo/Ym1RbE1qQmphR2xz/Ykh4bGJud3dmSHd3/Zkh4OE1BPT0" alt="Netflix Clone">
+                    <span class="project-tag">Web Development</span>
+                </div>
+                <div class="project-content">
+                    <h3>Netflix Clone</h3>
+                    <p>Built an interactive streaming platform replica with modern UI focused on responsive design and user-centric interfaces.</p>
+                    <div class="tech-tags"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">UI/UX</span></div>
+                </div>
+            </div>
+            <div class="project-box" data-category="web-dev">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Nike Clone">
+                     <span class="project-tag">Web Development</span>
+                </div>
+                <div class="project-content">
+                    <h3>Nike Clone</h3>
+                    <p>Created an e-commerce replica focusing on clean layouts and responsive design with Docker for efficient deployment.</p>
+                    <div class="tech-tags"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">Js</span></div>
+                </div>
+            </div>
+       
+             <div class="project-box" data-category="agentic-ai">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" alt="Deep Research Agent Team">
+                    <span class="project-tag">Agentic AI</span>
+                </div>
+                <div class="project-content">
+                    <h3>Deep Research Agent Team</h3>
+                    <p>Multi-agent system conducting comprehensive, autonomous topic research. Implements advanced AI orchestration.</p>
+                     <div class="tech-tags"><span class="tech-tag">Multi-Agent Systems</span><span class="tech-tag">LangGraph</span></div>
+                </div>
+            </div>
+             <div class="project-box" data-category="agentic-ai">
+                <div class="project-img">
+                    <img src="https://imgs.search.brave.com/j-TRsBT4n6UWivIieAbWy8B5AuSPSQfLJx0L8e2CFzQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzEzLzk2LzY5LzYw/LzM2MF9GXzEzOTY2/OTYwMjRfYnFLeXN6/T1FRUkt4VHlkczR0/TEpLVEduT3lkR0Vp/bFEuanBn" alt="AI Trading Floor">
+                    <span class="project-tag">Agentic AI</span>
+                </div>
+                <div class="project-content">
+                    <h3>AI Trading Floor</h3>
+                    <p>Multi-agent trading system powered by MCP sensors and AI tools for autonomous trading. Features real-time market analysis.</p>
+                    <div class="tech-tags"><span class="tech-tag">AI Agents</span><span class="tech-tag">Real-time Data</span></div>
+                </div>
+            </div>
+            <div class="project-box" data-category="agentic-ai">
+                <div class="project-img">
+                    <img src="https://imgs.search.brave.com/jY92cR-S2OULfS-qPSk-sTJWshABXcy3Yby8wPWDr9k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/dWlzdG9yZS5kZXNp/Z24vYXNzZXRzL2lt/YWdlcy9haS1zdGFy/dHVwLWZyZWUtd2Vi/c2l0ZS11aS1raXQt/dGh1bWIud2VicA" alt="Career Digital Twin">
+                    <span class="project-tag">Design Figma</span>
+                </div>
+                <div class="project-content">
+                    <h3>UI UX Projects Figma</h3>
+                    <p>Designed interactive and visually appealing UI/UX projects using Figma, focusing on user-centric layouts and seamless navigation. Created prototypes to demonstrate design flow and enhance user experience.</p>
+                    <div class="tech-tags"><span class="tech-tag">Figma</span><span class="tech-tag">Canva</span><span class="tech-tag">UI/UX Design Principles</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <h2 class="section-heading">Education & <span>Learning</span></h2>
+        <p class="section-subheading">My academic journey and continuous learning path in technology and innovation.</p>
+        <div class="education-timeline">
+            <div class="timeline-container left">
+                <div class="timeline-content">
+                    <div class="title-container">
+                        <h2>Bachelor of Technology</h2>
+                        <span class="timeline-status status-progress">In Progress</span>
+                    </div>
+                    <h3>GCOE, Kolhapur, Maharashtra</h3>
+                    <p>Currently pursuing B.Tech with focus on Computer Science and Engineering. Actively engaged in learning modern technologies and participating in technical events.</p>
+                    <div class="timeline-tags">
+                        <span class="tech-tag">Computer Science</span><span class="tech-tag">Software Engineering</span><span class="tech-tag">Data Structures</span>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-container right">
+                <div class="timeline-content">
+                     <div class="title-container">
+                        <h2>Agentic AI Engineering</h2>
+                        <span class="timeline-status status-completed">Completed</span>
+                    </div>
+                    <h3>The Complete Agentic AI Engineering Course</h3>
+                    <p>Mastered design patterns for Agentic AI and connected LLMs to create autonomous workflows. Gained expertise in CrewAI, OpenAI Agents SDK, LangGraph, and AutoGen.</p>
+                    <div class="timeline-tags">
+                        <span class="tech-tag">CrewAI</span><span class="tech-tag">AutoGen</span><span class="tech-tag">LLM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-container left">
+                <div class="timeline-content">
+                    <div class="title-container">
+                        <h2>Full Stack Web Development</h2>
+                        <span class="timeline-status status-progress">In Progress</span>
+                    </div>
+                    <h3>Certification Course</h3>
+                    <p>Deepening my expertise across the entire web stack, from front-end frameworks like React to back-end development with Node.js and database management.</p>
+                    <div class="timeline-tags">
+                         <span class="tech-tag">React</span><span class="tech-tag">Node.js</span><span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-container right">
+                <div class="timeline-content">
+                    <div class="title-container">
+                        <h2>Senior Secondary (XII)</h2>
+                        <span class="timeline-status status-completed">Completed</span>
+                    </div>
+                    <h3>Indira Gandhi Junior College</h3>
+                    <p>Completed higher secondary education with excellent performance. Built strong foundation in science and mathematics.</p>
+                    <div class="timeline-tags">
+                         <span class="tech-tag">Mathematics</span><span class="tech-tag">Physics</span><span class="tech-tag">Chemistry</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-heading">Get In <span>Touch</span></h2>
+        <p class="section-subheading">Ready to collaborate on exciting projects? Whether it's web development, Agentic AI, or UI/UX design, I'd love to hear from you. Let's create something amazing together!</p>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Let's discuss your next project</h3>
+                <p>I'm always excited to work on new challenges, whether it's building intelligent web applications, implementing Agentic AI solutions, or creating beautiful user interfaces. Let's connect and bring your ideas to life!</p>
+                <div class="contact-detail-card">
+                    <div class="icon"><i class='bx bxs-envelope'></i></div>
+                    <a href="mailto:nirmalpatil615@gmail.com">nirmalpatil615@gmail.com</a>
+                </div>
+                <div class="contact-detail-card">
+                    <div class="icon"><i class='bx bxs-phone'></i></div>
+                    <a href="tel:+919322351145">+91 93223 51145</a>
+                </div>
+                <div class="contact-detail-card">
+                    <div class="icon"><i class='bx bxs-map'></i></div>
+                    <a href="#">Dadra Nagar Haveli, India</a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/myzpdwkg" method="POST">
+                    <div class="input-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?">
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project, ideas, or just say hello!" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message <i class='bx bx-send'></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Nirmal Patil. Built with HTML, CSS, and JavaScript.</p>
     </footer>
 
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!-- Your Script File -->
     <script src="script.js"></script>
 </body>
 </html>
