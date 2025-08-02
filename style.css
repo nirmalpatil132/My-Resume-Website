@@ -728,8 +728,33 @@ section {
     .navbar { position: absolute; top: 100%; left: -100%; width: 100%; padding: 1rem 3%; background: var(--bg-color); border-top: 1px solid var(--border-color); transition: .25s ease; }
     .navbar.active { left: 0; }
     .navbar a { display: block; font-size: 2rem; margin: 3rem 0; }
+    
+    /* MOBILE FIX: Adjust home section for better mobile layout */
+    .home {
+        flex-direction: column-reverse;
+        min-height: auto;
+        padding-top: 12rem;
+    }
+    .home-img {
+        width: 32rem;
+        height: 32rem;
+        margin-bottom: 3rem;
+    }
+    .home-content {
+        margin-top: 0;
+    }
+
     .education-timeline::after { left: 31px; }
     .timeline-container { width: 100%; padding-left: 70px; padding-right: 25px; }
     .timeline-container.right { left: 0%; }
     .timeline-container.left::after, .timeline-container.right::after { left: 15px; }
+}
+
+@media(max-width: 450px) {
+    html { font-size: 50%; }
+    .home-actions { flex-direction: column; gap: 2rem; align-items: center; }
+    .btn { width: 20rem; justify-content: center; }
+    .icon-btn { margin: 0; }
+    .home-actions .icon-btn:nth-of-type(1) { margin-left: 0; }
+    .home-img { width: 28rem; height: 28rem; }
 }
